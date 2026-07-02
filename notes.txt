@@ -1,0 +1,2 @@
+vielleicht eine Konsole auf cloudstack zur verfügung stellen mit minimal linux.
+Die Dokumente sind zu überprüfen, da einiges Fehlerhaft ist.

@@ -1,0 +1,21 @@
+# LibreOffice-Sperrdateien
+.~lock.*#
+
+# Microsoft-Office-Temporärdateien
+~$*
+*.tmp
+
+# Betriebssystem
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editoren
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Lokale Claude-Code-Einstellungen
+.claude/settings.local.json

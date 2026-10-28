@@ -52,8 +52,7 @@ for n in $(seq 1 "$ANZAHL"); do
   useradd --create-home --shell /bin/bash --groups "$GRUPPE" "$USERNAME"
   echo "$USERNAME:$PASSWORT" | chpasswd
 
-  # Home-Verzeichnis abschotten: Teams arbeiten nur im eigenen Bereich.
-  # (Fuer den "ls /home"-Gag am Ende bewusst auf 755 aendern.)
+  # Home-Verzeichnis abschotten: andere Teams koennen nicht hineinschauen.
   chmod 700 "/home/$USERNAME"
 
   echo "    $USERNAME angelegt (Passwort: $PASSWORT)"

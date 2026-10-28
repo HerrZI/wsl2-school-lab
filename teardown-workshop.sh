@@ -33,6 +33,6 @@ for USERNAME in $MITGLIEDER; do
     || echo "  $USERNAME konnte nicht entfernt werden (bitte manuell pruefen)"
 done
 
-groupdel "$GRUPPE"
+groupdel "$GRUPPE" || echo "  Gruppe '$GRUPPE' konnte nicht entfernt werden (bitte manuell pruefen)"
 rm -rf /srv/workshop
 echo "Aufraeumen abgeschlossen."

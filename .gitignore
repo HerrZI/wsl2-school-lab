@@ -19,3 +19,10 @@ desktop.ini
 
 # Lokale Claude-Code-Einstellungen
 .claude/settings.local.json
+
+# Blitzumfrage: QR-Code-Quelldatei (steckt bereits in der Präsentation) und Umfragedaten
+zrXL.png
+poll.txt
+
+# Sicherungskopie des Nutzers, wird nicht bearbeitet
+Workshop_WSL2_Linux_unterrichten_neu (org).pptx

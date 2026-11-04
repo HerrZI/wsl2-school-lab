@@ -27,7 +27,7 @@ Der Workshop hat drei Stationen:
 | `setup-workshop.sh` | Legt Benutzer, Gruppe, Übungsdatei und SSH auf dem Übungsserver an | fertig |
 | `teardown-workshop.sh` | Räumt alles wieder ab | fertig |
 | `wsl-setup-workshop.sh`, `wsl-teardown-workshop.sh` | Weg A: Übungsbenutzer und Logdatei in der eigenen WSL-Instanz, ohne SSH | neu, mit `bash -n` geprüft, noch nicht auf einer WSL-Instanz getestet |
-| `Videos/` | Drei Bildschirmaufnahmen des Installationspfads (ca. 35 MB), Sicherheitsnetz für die Demo | im Repo |
+| `Videos/` | Vier Bildschirmaufnahmen (ca. 53 MB): 1 WSL installieren, 2 Ubuntu installieren, 3 Ubuntu starten und verwenden, 4 Skript ausführen und exportieren. Folie 4 (Video 1 und 2), Folie 5 (Video 3), Folie 6 (Video 4) | im Repo |
 | `Dokumente/Workshop_WSL2_Linux_unterrichten_neu (org).pptx` | Sicherungskopie des Nutzers, wird nicht bearbeitet | nur lokal, per `.gitignore` ausgeschlossen |
 | `README.md`, `CLAUDE.md`, `.gitignore` | Beschreibung, Arbeitshinweise für Claude Code, Ignore-Regeln | aktuell |
 
@@ -75,7 +75,7 @@ Die Passwörter sind bewusst trivial. Der Server gehört nur ins lokale Netz und
 - [ ] Zugangsdaten-Zettel je Team gedruckt
 - [ ] Arbeitsblatt für alle, Lösungsblatt nur für die Leitung gedruckt
 - [ ] Handout als Doppelseite gedruckt (2 Seiten, beidseitig) oder als PDF bereit
-- [x] Videos der WSL2-Installation als Sicherheitsnetz für die Demo (liegen lokal in `Videos/`)
+- [x] Videos der WSL2-Installation als Sicherheitsnetz für die Demo (vier Stück in `Videos/`, Reihenfolge wie auf Folie 4 und 6)
 - [ ] Demo-Gerät: WSL vorher deinstallieren oder Plan B aus der Notiz zu Folie 4 nutzen (bei `wsl -d Ubuntu-26.04` einsteigen)
 - [ ] Zwei Leihgeräte für Teilnehmende mit gesperrtem Port 22
 - [ ] Präsentation einmal in PowerPoint geöffnet, Roboto-Darstellung und Pfeil auf Folie 5 geprüft (Datum steht fest auf 16.11.2026)
@@ -116,9 +116,11 @@ Die Passwörter sind bewusst trivial. Der Server gehört nur ins lokale Netz und
 - Folie 5: zweispaltig, links Karte „Windows ⟷ Linux“, rechts „Für den Unterricht heißt das:“ mit drei Punkten.
 - Handout Abschnitt 1: „WSL2 in acht Minuten installieren“ mit dem erprobten Pfad (14 Befehle inkl. `cowsay`-Test), darunter „Weitere Befehle“ (`wsl`, `wsl ~`, `wsl -d <Distro>`, `wsl --update`, `wsl --status`). Vom Nutzer abschließend überarbeitet, Seite 1 eingefroren. Abschnitt 2 gekürzt (ohne `explorer.exe` und `apt`-Punkt).
 - Neue Skripte `wsl-setup-workshop.sh` und `wsl-teardown-workshop.sh` (04.11.2026): dasselbe Benutzerschema und derselbe Logdatei-Pfad wie die Server-Skripte, aber ohne SSH und mit Standard 2 Benutzern. Gedacht für Teilnehmer, die das Arbeitsblatt in ihrer eigenen WSL-Instanz nachspielen, und als Vorstufe für ein exportierbares Klassen-Image.
-- Drei Videos des Installationspfads aufgenommen (`Videos/`, im Repo).
+- Vier Videos aufgenommen (`Videos/`, im Repo): Installationspfad (1–3) und Skript plus Export (4).
 - Folie 5: Sprechernotiz neu geschrieben (Anschluss an die Videos aus Folie 4, `/mnt/c` live, Pfeil in beide Richtungen, Fazit aus der rechten Spalte, Vorbereitung der Testdatei), vom Nutzer in Einzelzeilen gegliedert.
 - Notiz zu Folie 2: Cockpit- und Ergebnis-Link der Umfrage entfernt, es bleiben Teilnehmer-Links und ein Verweis auf `poll.txt`. Mit dem Nutzer abgesprochen.
+- Folien 4 bis 6 auf die vier Videos umgebaut (04.11.2026, Wunsch des Nutzers): Folie 4 „VIDEO 1 UND 2“ mit fünf Spiegelstrichen (WSL = Windows Subsystem for Linux, VM, kostenlos, Video 1 `wsl --install`, Video 2 `wsl --install Ubuntu`) und passendem Terminal. Folie 5 „VIDEO 3, DANN LIVE AM BEAMER“ neu auf dem Raster von Folie 4: Video 3 `wsl`, apt/cowsay, Windows ⟷ Linux über /mnt/c, „Im Unterricht:“; Terminal mit ASCII-Kuh und `cd /mnt/c/...`. Die alte Karten-Ansicht von Folie 5 ist ersetzt. Folie 6 „VIDEO 4“ zeigt im Terminal `sudo ./wsl-setup-workshop.sh` vor dem Export, Karte 1 nennt das Skript. Notizen 4 bis 6 neu geschrieben (Video 1/2, Video 3 plus Live-Teil mit Testdatei, Video 4). Alle drei Folien gerendert und geprüft.
+- Office-Dateien in den Ordner `Dokumente/` verschoben (04.11.2026), `.gitignore` und Dateitabellen nachgezogen.
 
 ## Nächster Schritt
 

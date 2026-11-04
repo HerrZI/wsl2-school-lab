@@ -34,7 +34,7 @@ Die Teilnehmer verbinden sich aus der PowerShell mit `ssh userNN@<IP>`. Die Pass
 | `server.log` | Übungsdatei, 210 Zeilen eines fiktiven Schulservers |
 | `wsl-setup-workshop.sh`, `wsl-teardown-workshop.sh` | Übungsumgebung in der eigenen WSL-Instanz anlegen und entfernen (ohne SSH) |
 | `setup-workshop.sh`, `teardown-workshop.sh` | Gemeinsamen Übungsserver mit SSH anlegen und entfernen |
-| `Videos/` | Bildschirmaufnahmen des Installationspfads (Sicherheitsnetz für die Demo) |
+| `Videos/` | Vier Bildschirmaufnahmen: WSL installieren, Ubuntu installieren, Ubuntu starten, Skript und Export (Sicherheitsnetz für die Demo) |
 | `UEBERGABE.md` | Stand, Checkliste und offene Punkte für die Workshopleitung |
 
 Alle Skripte brauchen `sudo`, legen Systembenutzer an und erwarten die `server.log` neben sich. Die Übungen bauen auf den frei verfügbaren LPIC-1-Lernmaterialien des Linux Professional Institute auf (learning.lpi.org/de).

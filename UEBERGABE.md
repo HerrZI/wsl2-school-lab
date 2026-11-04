@@ -6,7 +6,7 @@ Stand: 04.11.2026
 
 Ein 60-minütiger Workshop für Lehrkräfte am Regionalen Akademietag der Cisco Networking Academy. Ziel: Linux-Kommandozeile auf Windows-Schulrechnern unterrichten. **Hauptweg (Weg A):** Jede Teilnehmerin, jeder Teilnehmer installiert WSL und Ubuntu auf dem eigenen Gerät und legt mit `wsl-setup-workshop.sh` die Übungsumgebung an. **Ausweichweg (Weg B):** Wer auf dem Gerät kein WSL installieren darf, arbeitet per SSH auf dem gemeinsamen Übungsserver. Beide Wege führen zum selben Arbeitsblatt.
 
-Der Workshop hat drei Stationen:
+Der Workshop hat vier Abschnitte (Folie 3 zeigt sie als Zeitstrahl):
 
 | Station | Minuten | Inhalt |
 |---|---|---|
@@ -112,6 +112,7 @@ Die Passwörter sind bewusst trivial. Der Server gehört nur ins lokale Netz und
 
 - Folie 2 vom Nutzer finalisiert: „Linux überall – nur nicht im Computerraum“, Blitzumfrage mit QR-Code. Gesperrt.
 - Folie 3: Station 1 heißt „Demo: WSL2 auf dem (eigenen) Windows-Rechner“.
+- Folie 3 neu gestaltet (04.11.2026, Wunsch des Nutzers): Titel „Was Sie heute erwartet“, Zeitstrahl mit vier proportionalen Abschnitten (Einstieg, Demo, Hands-on, Transfer) und Minutenmarken, darunter drei Karten Demo/Hands-on/Transfer. Hands-on-Text auf Wunsch des Nutzers in zwei Absätzen mit Leerzeile: „WSL selbst installieren oder auf dem Übungsserver arbeiten.“ / „Dann zwei Übungen: eine Kommandozeilen-Rallye und ein Server-Krimi mit Pipes“ (unbestimmter Artikel, da erste Erwähnung). Die Begriffe „Sehen / Selbst machen / Mitnehmen“ und „60 Minuten, drei Stationen“ sind weg. Notiz unverändert.
 - Folie 4: Titel „WSL2: Linux, das in Windows wohnt“, fünf Punkte (VM, `wsl --install`, `wsl --install Ubuntu` mit Kaffeepause, `wsl`, kostenlos & offiziell), Terminal zeigt `wsl --install Ubuntu`. Sprechernotiz führt den vollständigen Handout-Pfad als Live-Demo mit Plan B.
 - Folie 5: zweispaltig, links Karte „Windows ⟷ Linux“, rechts „Für den Unterricht heißt das:“ mit drei Punkten.
 - Handout Abschnitt 1: „WSL2 in acht Minuten installieren“ mit dem erprobten Pfad (14 Befehle inkl. `cowsay`-Test), darunter „Weitere Befehle“ (`wsl`, `wsl ~`, `wsl -d <Distro>`, `wsl --update`, `wsl --status`). Vom Nutzer abschließend überarbeitet, Seite 1 eingefroren. Abschnitt 2 gekürzt (ohne `explorer.exe` und `apt`-Punkt).
@@ -124,7 +125,7 @@ Die Passwörter sind bewusst trivial. Der Server gehört nur ins lokale Netz und
 
 ## Nächster Schritt
 
-**Folien 7 bis 13 durchsehen.** Sie wurden am 04.11.2026 auf das Konzept Weg A/Weg B umgebaut, Folie 6 ist abgestimmt, Folien 1 bis 5 sind final. Folie 3 (Station „Selbst machen“) ist mit Freigabe des Nutzers auf beide Wege angepasst. Danach die `wsl-*`-Skripte auf einer frischen WSL-Instanz testen und committen.
+**Folien 7 bis 13 durchsehen.** Sie wurden am 04.11.2026 auf das Konzept Weg A/Weg B umgebaut, Folie 6 ist abgestimmt, Folien 1 bis 6 sind abgestimmt. Folie 3 wurde am 04.11.2026 auf Wunsch des Nutzers neu gestaltet (Zeitstrahl plus drei Karten statt nummerierter Liste) und wartet auf sein Urteil. Danach die `wsl-*`-Skripte auf einer frischen WSL-Instanz testen und committen.
 
 ## Offene Punkte
 

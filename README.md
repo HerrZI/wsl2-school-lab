@@ -27,10 +27,10 @@ Die Teilnehmer verbinden sich aus der PowerShell mit `ssh userNN@<IP>`. Die Pass
 
 | Datei | Zweck |
 |---|---|
-| `Workshop_WSL2_Linux_unterrichten_neu.pptx` | Präsentation mit Sprechernotizen (13 Folien) |
-| `Handout_WSL2_im_Schulkontext.docx` | Handout: Installation, Alltag, Klassen-Image, Übungsumgebung, Stolperstellen, LPI-Material |
-| `Arbeitsblatt_Linux_Kommandozeile.docx` | Arbeitsblatt: Mini-Rallye (Teil A) und Pipes-Challenge „Server-Krimi“ (Teil B) |
-| `Loesungsblatt_fuer_Workshopleitung.docx` | Lösungen mit den Zahlen zur mitgelieferten Logdatei |
+| `Dokumente/Workshop_WSL2_Linux_unterrichten_neu.pptx` | Präsentation mit Sprechernotizen (13 Folien) |
+| `Dokumente/Handout_WSL2_im_Schulkontext.docx` | Handout (Doppelseite): Installation in acht Minuten, Alltag, Klassen-Image, Übungsumgebung Weg A/B, Links |
+| `Dokumente/Arbeitsblatt_Linux_Kommandozeile.docx` | Arbeitsblatt: Mini-Rallye (Teil A) und Pipes-Challenge „Server-Krimi“ (Teil B) |
+| `Dokumente/Loesungsblatt_fuer_Workshopleitung.docx` | Lösungen mit den Zahlen zur mitgelieferten Logdatei |
 | `server.log` | Übungsdatei, 210 Zeilen eines fiktiven Schulservers |
 | `wsl-setup-workshop.sh`, `wsl-teardown-workshop.sh` | Übungsumgebung in der eigenen WSL-Instanz anlegen und entfernen (ohne SSH) |
 | `setup-workshop.sh`, `teardown-workshop.sh` | Gemeinsamen Übungsserver mit SSH anlegen und entfernen |

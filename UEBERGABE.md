@@ -19,19 +19,19 @@ Der Workshop hat drei Stationen:
 
 | Datei | Zweck | Status |
 |---|---|---|
-| `Workshop_WSL2_Linux_unterrichten_neu.pptx` | Präsentation, 13 Folien mit Sprechernotizen, im MMBBS-Design | fertig, geprüft; Folie 2 final |
-| `Arbeitsblatt_Linux_Kommandozeile.docx` | Arbeitsblatt für die Teilnehmenden, Einstieg über Weg A/Weg B, Teil A und B | umgebaut 04.11.2026, 2 Seiten |
-| `Loesungsblatt_fuer_Workshopleitung.docx` | Lösungen inkl. Zahlen, die zur `server.log` passen, Zeitpuffer-Tipp für klemmende WSL-Vorbereitung | fertig, geprüft |
-| `Handout_WSL2_im_Schulkontext.docx` | Handout zum Mitnehmen, 2 Seiten als Doppelseite: Installation in acht Minuten, Alltag, Klassen-Image, Übungsumgebung (Weg A/B), Links | fertig; vom Nutzer gekürzt; Seite 1 eingefroren |
+| `Dokumente/Workshop_WSL2_Linux_unterrichten_neu.pptx` | Präsentation, 13 Folien mit Sprechernotizen, im MMBBS-Design | fertig, geprüft; Folie 2 final |
+| `Dokumente/Arbeitsblatt_Linux_Kommandozeile.docx` | Arbeitsblatt für die Teilnehmenden, Einstieg über Weg A/Weg B, Teil A und B | umgebaut 04.11.2026, 2 Seiten |
+| `Dokumente/Loesungsblatt_fuer_Workshopleitung.docx` | Lösungen inkl. Zahlen, die zur `server.log` passen, Zeitpuffer-Tipp für klemmende WSL-Vorbereitung | fertig, geprüft |
+| `Dokumente/Handout_WSL2_im_Schulkontext.docx` | Handout zum Mitnehmen, 2 Seiten als Doppelseite: Installation in acht Minuten, Alltag, Klassen-Image, Übungsumgebung (Weg A/B), Links | fertig; vom Nutzer gekürzt; Seite 1 eingefroren |
 | `server.log` | Übungsdatei, 210 Zeilen, fiktiver Server `srv-schule01` | fertig |
 | `setup-workshop.sh` | Legt Benutzer, Gruppe, Übungsdatei und SSH auf dem Übungsserver an | fertig |
 | `teardown-workshop.sh` | Räumt alles wieder ab | fertig |
 | `wsl-setup-workshop.sh`, `wsl-teardown-workshop.sh` | Weg A: Übungsbenutzer und Logdatei in der eigenen WSL-Instanz, ohne SSH | neu, mit `bash -n` geprüft, noch nicht auf einer WSL-Instanz getestet |
 | `Videos/` | Drei Bildschirmaufnahmen des Installationspfads (ca. 35 MB), Sicherheitsnetz für die Demo | im Repo |
-| `Workshop_WSL2_Linux_unterrichten_neu (org).pptx` | Sicherungskopie des Nutzers, wird nicht bearbeitet | nur lokal, per `.gitignore` ausgeschlossen |
+| `Dokumente/Workshop_WSL2_Linux_unterrichten_neu (org).pptx` | Sicherungskopie des Nutzers, wird nicht bearbeitet | nur lokal, per `.gitignore` ausgeschlossen |
 | `README.md`, `CLAUDE.md`, `.gitignore` | Beschreibung, Arbeitshinweise für Claude Code, Ignore-Regeln | aktuell |
 
-Nicht im Repo und bewusst ignoriert: `zrXL.png` (QR-Code-Quelle, steckt in der Präsentation), `poll.txt` (DirectPoll-Links inkl. Admin-Link), die MMBBS-Vorlage (Metadaten mit Namen und E-Mail von Kollegen).
+Nicht im Repo und bewusst ignoriert: `Dokumente/zrXL.png` (QR-Code-Quelle, steckt in der Präsentation), `Dokumente/poll.txt` (DirectPoll-Links inkl. Admin-Link), die MMBBS-Vorlage (Metadaten mit Namen und E-Mail von Kollegen).
 
 ## Wichtige Zusammenhänge
 

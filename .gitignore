@@ -20,9 +20,10 @@ desktop.ini
 # Lokale Claude-Code-Einstellungen
 .claude/settings.local.json
 
-# Blitzumfrage: QR-Code-Quelldatei (steckt bereits in der Präsentation) und Umfragedaten
-zrXL.png
-poll.txt
+# Office-Dateien liegen seit 04.11.2026 im Ordner Dokumente/.
+# Blitzumfrage: QR-Code-Quelldatei (steckt bereits in der Präsentation) und Umfragedaten (enthält den Admin-Link)
+Dokumente/zrXL.png
+Dokumente/poll.txt
 
 # Sicherungskopie des Nutzers, wird nicht bearbeitet
-Workshop_WSL2_Linux_unterrichten_neu (org).pptx
+Dokumente/Workshop_WSL2_Linux_unterrichten_neu (org).pptx

@@ -18,10 +18,10 @@ Sprache des Projekts: **Deutsch**. Antworten, Commit-Messages und neue Dateien b
 
 | Datei | Zweck |
 |---|---|
-| `Workshop_WSL2_Linux_unterrichten_neu.pptx` | Präsentation (13 Folien mit Notizen, Fahrplan: Einstieg, Demo, Hands-on I/II, Transfer). Nutzt Master, Layouts und Theme der offiziellen MMBBS-Vorlage (`MMBBS_PPT_Vorlage_092025_Ansicht.pptx`, liegt bewusst nicht im Repo, da ihre Metadaten Namen und E-Mail von Kollegen enthalten); Folienformat 16:9 mit 33,87 × 19,05 cm. Die Roboto-Schrift ist **nicht mehr eingebettet** (ging beim Speichern in OnlyOffice verloren). |
-| `Arbeitsblatt_Linux_Kommandozeile.docx` | Arbeitsblatt für Teilnehmer, 2 Seiten. Einstieg mit Weg A (WSL: `wsl -d Ubuntu-26.04`, `git clone`, `sudo ./wsl-setup-workshop.sh`, `su - user01`) und Weg B (`ssh userNN@<IP>`). Teil A: Mini-Rallye (pwd, ls, mkdir, cd, touch, mv, man). Teil B: Pipes-Challenge "Server-Krimi" mit `server.log`. |
-| `Loesungsblatt_fuer_Workshopleitung.docx` | Lösungen zum Arbeitsblatt inkl. Zahlenwerten, die zur mitgelieferten `server.log` passen müssen. |
-| `Handout_WSL2_im_Schulkontext.docx` | Handout für Lehrkräfte, **2 Seiten (Doppelseite zum Drucken)**, fünf Abschnitte: 1 Installation in acht Minuten (siehe Zusammenhänge), 2 Alltag, 3 Klassen-Image, 4 Übungsumgebung Weg A/B, 5 Links (Repo, WSL-Doku, LPI). Stolperstellen und LPI-Themen stehen nur noch auf den Folien. |
+| `Dokumente/Workshop_WSL2_Linux_unterrichten_neu.pptx` | Präsentation (13 Folien mit Notizen, Fahrplan: Einstieg, Demo, Hands-on I/II, Transfer). Nutzt Master, Layouts und Theme der offiziellen MMBBS-Vorlage (`MMBBS_PPT_Vorlage_092025_Ansicht.pptx`, liegt bewusst nicht im Repo, da ihre Metadaten Namen und E-Mail von Kollegen enthalten); Folienformat 16:9 mit 33,87 × 19,05 cm. Die Roboto-Schrift ist **nicht mehr eingebettet** (ging beim Speichern in OnlyOffice verloren). |
+| `Dokumente/Arbeitsblatt_Linux_Kommandozeile.docx` | Arbeitsblatt für Teilnehmer, 2 Seiten. Einstieg mit Weg A (WSL: `wsl -d Ubuntu-26.04`, `git clone`, `sudo ./wsl-setup-workshop.sh`, `su - user01`) und Weg B (`ssh userNN@<IP>`). Teil A: Mini-Rallye (pwd, ls, mkdir, cd, touch, mv, man). Teil B: Pipes-Challenge "Server-Krimi" mit `server.log`. |
+| `Dokumente/Loesungsblatt_fuer_Workshopleitung.docx` | Lösungen zum Arbeitsblatt inkl. Zahlenwerten, die zur mitgelieferten `server.log` passen müssen. |
+| `Dokumente/Handout_WSL2_im_Schulkontext.docx` | Handout für Lehrkräfte, **2 Seiten (Doppelseite zum Drucken)**, fünf Abschnitte: 1 Installation in acht Minuten (siehe Zusammenhänge), 2 Alltag, 3 Klassen-Image, 4 Übungsumgebung Weg A/B, 5 Links (Repo, WSL-Doku, LPI). Stolperstellen und LPI-Themen stehen nur noch auf den Folien. |
 | `server.log` | Übungsdatei (210 Zeilen, fiktiver Schulserver `srv-schule01`). Wird vom Setup-Skript nach `/srv/workshop/` kopiert. |
 | `setup-workshop.sh` | Legt auf dem Übungsserver Benutzer `user01..userNN` (Passwort `akademieNN`), Gruppe `workshop` und `/srv/workshop/server.log` an, startet SSH. Aufruf: `sudo ./setup-workshop.sh [ANZAHL]`, Standard 40. |
 | `teardown-workshop.sh` | Entfernt alle Workshop-Benutzer, die Gruppe und `/srv/workshop` wieder. Fragt vor dem Löschen nach. |
@@ -29,10 +29,10 @@ Sprache des Projekts: **Deutsch**. Antworten, Commit-Messages und neue Dateien b
 | `wsl-teardown-workshop.sh` | Räumt die WSL-Variante wieder ab (Benutzer, Gruppe, `/srv/workshop`). Fragt vor dem Löschen nach. |
 | `UEBERGABE.md` | Übergabedokument mit Stand, Checkliste und offenen Punkten. Bei größeren Änderungen mitpflegen. |
 | `Videos/` | Drei Bildschirmaufnahmen des Installationspfads (WSL installieren, Ubuntu installieren, Ubuntu starten), zusammen ca. 35 MB. Sicherheitsnetz für die Live-Demo. Liegen im Repo. |
-| `Workshop_WSL2_Linux_unterrichten_neu (org).pptx` | Vom Nutzer abgelegte Sicherungskopie der Präsentation. **Nicht anfassen, nicht ändern, nicht löschen, nicht in Prüfungen einbeziehen.** Per `.gitignore` ausgeschlossen. |
+| `Dokumente/Workshop_WSL2_Linux_unterrichten_neu (org).pptx` | Vom Nutzer abgelegte Sicherungskopie der Präsentation. **Nicht anfassen, nicht ändern, nicht löschen, nicht in Prüfungen einbeziehen.** Per `.gitignore` ausgeschlossen. |
 | `README.md` | Kurzbeschreibung des Repos. |
 
-Per `.gitignore` ausgeschlossen sind außerdem LibreOffice-Sperrdateien (`.~lock.*#`), `zrXL.png` (QR-Code-Quelle, steckt bereits in der Präsentation) und `poll.txt` (DirectPoll-Links der Blitzumfrage, enthält den Admin-Link).
+Per `.gitignore` ausgeschlossen sind außerdem LibreOffice-Sperrdateien (`.~lock.*#`), `Dokumente/zrXL.png` (QR-Code-Quelle, steckt bereits in der Präsentation) und `Dokumente/poll.txt` (DirectPoll-Links der Blitzumfrage, enthält den Admin-Link).
 
 ## Wichtige Zusammenhänge
 
@@ -44,7 +44,7 @@ Per `.gitignore` ausgeschlossen sind außerdem LibreOffice-Sperrdateien (`.~lock
 - Die `wsl-*`-Skripte sind die SSH-freie Variante für die eigene WSL-Instanz (Idee: Teilnehmer bereiten ihr frisch installiertes Ubuntu selbst für das Arbeitsblatt vor oder der Dozent exportiert es als Klassen-Image). Änderungen an Benutzerschema oder Logdatei-Pfad in allen vier Skripten nachziehen.
 - Die Passwörter sind bewusst trivial. Der Server ist nur fürs lokale Veranstaltungsnetz gedacht.
 - WSL2-Besonderheiten im Setup-Skript: systemd nur, wenn in `/etc/wsl.conf` aktiviert; für Zugriff aus dem Netz gespiegelter Netzwerkmodus (`networkingMode=mirrored`) oder `netsh portproxy`.
-- **Sensibel:** Der DirectPoll-Cockpit- und der Ergebnis-Link der Blitzumfrage stehen nur in `poll.txt` (ignoriert, lokal). Die Sprechernotiz zu Folie 2 enthält bewusst nur den Teilnehmer-Link `https://etc.ch/zrXL`, den langen Teilnehmer-Link und einen Verweis auf `poll.txt`. Die Admin-Links nie in getrackte Dateien übernehmen.
+- **Sensibel:** Der DirectPoll-Cockpit- und der Ergebnis-Link der Blitzumfrage stehen nur in `Dokumente/poll.txt` (ignoriert, lokal). Die Sprechernotiz zu Folie 2 enthält bewusst nur den Teilnehmer-Link `https://etc.ch/zrXL`, den langen Teilnehmer-Link und einen Verweis auf `poll.txt`. Die Admin-Links nie in getrackte Dateien übernehmen.
 
 ## Festgelegte Konventionen
 

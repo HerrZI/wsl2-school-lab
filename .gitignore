@@ -20,10 +20,17 @@ desktop.ini
 # Lokale Claude-Code-Einstellungen
 .claude/settings.local.json
 
-# Office-Dateien liegen seit 04.11.2026 im Ordner Dokumente/.
+# Office-Dateien liegen im Ordner dokumente/ (seit 05.11.2026 kleingeschrieben).
 # Blitzumfrage: QR-Code-Quelldatei (steckt bereits in der Präsentation) und Umfragedaten (enthält den Admin-Link)
-Dokumente/zrXL.png
-Dokumente/poll.txt
+dokumente/zrXL.png
+dokumente/poll.txt
 
 # Sicherungskopie des Nutzers, wird nicht bearbeitet
-Dokumente/Workshop_WSL2_Linux_unterrichten_neu (org).pptx
+dokumente/Workshop_WSL2_Linux_unterrichten_neu (org).pptx
+
+# Python-Bytecode (Generator fuer den Zugangsdaten-Schnittbogen)
+__pycache__/
+*.pyc
+
+# Schnittbogen mit SSH-Zugangsdaten (interne IP und Passwoerter), bleibt lokal; Generator: server/zugangsdaten-erzeugen.py
+dokumente/Zugangsdaten_Uebungsserver.docx

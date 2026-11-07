@@ -34,3 +34,6 @@ __pycache__/
 
 # Schnittbogen mit SSH-Zugangsdaten (interne IP und Passwoerter), bleibt lokal; Generator: server/zugangsdaten-erzeugen.py
 dokumente/Zugangsdaten_Uebungsserver.docx
+
+# LPI-Lernmaterial (6,5 MB, CC BY-NC-ND), bleibt lokal
+dokumente/LPI-Learning-Material-010-160-de.pdf

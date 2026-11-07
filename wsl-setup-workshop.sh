@@ -78,8 +78,8 @@ echo " So wird man zum Uebungsbenutzer:"
 echo "   su - user01                   # in dieser Shell"
 echo "   wsl -d <Distro> -u user01     # aus der PowerShell"
 echo
-echo " Teil A des Arbeitsblatts braucht nur das Home-Verzeichnis,"
-echo " Teil B holt sich die Logdatei mit:"
+echo " Teil I des Arbeitsblatts braucht nur das Home-Verzeichnis,"
+echo " Teil II holt sich die Logdatei mit:"
 echo "   cp /srv/workshop/server.log ~/workshop/logs/"
 echo
 echo " Wieder alles entfernen: sudo ./wsl-teardown-workshop.sh"

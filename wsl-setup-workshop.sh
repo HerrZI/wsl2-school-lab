@@ -1,6 +1,7 @@
 #!/bin/bash
 #
 # wsl-setup-workshop.sh
+# Stand: 08.11.2026 · Regionaler Cisco-Akademietag 2026 Niedersachsen · WSL2-School-Lab
 # Bereitet eine WSL-Instanz (z. B. frisch installiertes Ubuntu) fuer das
 # Arbeitsblatt "Linux-Kommandozeile zum Anfassen" vor - ohne SSH-Server.
 # Es werden nur Uebungsbenutzer und die Uebungsdatei angelegt.
@@ -78,8 +79,8 @@ echo " So wird man zum Uebungsbenutzer:"
 echo "   su - user01                   # in dieser Shell"
 echo "   wsl -d <Distro> -u user01     # aus der PowerShell"
 echo
-echo " Teil I des Arbeitsblatts braucht nur das Home-Verzeichnis,"
-echo " Teil II holt sich die Logdatei mit:"
+echo " Teil A des Arbeitsblatts braucht nur das Home-Verzeichnis,"
+echo " Teil B holt sich die Logdatei mit:"
 echo "   cp /srv/workshop/server.log ~/workshop/logs/"
 echo
 echo " Wieder alles entfernen: sudo ./wsl-teardown-workshop.sh"

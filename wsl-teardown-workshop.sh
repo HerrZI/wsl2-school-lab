@@ -1,6 +1,7 @@
 #!/bin/bash
 #
 # wsl-teardown-workshop.sh
+# Stand: 08.11.2026 · Regionaler Cisco-Akademietag 2026 Niedersachsen · WSL2-School-Lab
 # Entfernt alles, was wsl-setup-workshop.sh angelegt hat: die Uebungsbenutzer
 # samt Home-Verzeichnissen, die Gruppe und die Uebungsdatei.
 # Aufruf: sudo ./wsl-teardown-workshop.sh

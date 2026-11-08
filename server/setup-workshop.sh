@@ -1,6 +1,7 @@
 #!/bin/bash
 #
 # setup-workshop.sh
+# Stand: 08.11.2026 · Regionaler Cisco-Akademietag 2026 Niedersachsen · WSL2-School-Lab
 # Legt Workshop-Benutzer an, verteilt die Uebungsdatei und startet SSH.
 # Aufruf:   sudo ./setup-workshop.sh [ANZAHL]     (Standard: 40)
 # Beispiel: sudo ./setup-workshop.sh 40

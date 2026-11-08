@@ -1,6 +1,7 @@
 #!/bin/bash
 #
 # teardown-workshop.sh
+# Stand: 08.11.2026 · Regionaler Cisco-Akademietag 2026 Niedersachsen · WSL2-School-Lab
 # Entfernt alle mit setup-workshop.sh angelegten Benutzer samt
 # Home-Verzeichnissen sowie die Uebungsdaten - rueckstandslos.
 # Aufruf: sudo ./teardown-workshop.sh
